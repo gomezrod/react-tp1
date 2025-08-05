@@ -1,0 +1,75 @@
+.navegacion {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #282c34;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.navTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #282c34;
+    color: white;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+
+    .input {
+        padding: 0.5rem;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        background-color: #444;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+.navBottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #282c34;
+    padding: 1rem;
+
+    ul {
+        width: 90%;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+
+        li {
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

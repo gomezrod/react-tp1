@@ -1,31 +1,16 @@
-import { useState } from 'react'
-import Button from './Button'
-import Navbar from './Navbar'
+import NavBar from './components/NavBar/NavBar'
+import CartWidget from './components/CartWidget/CartWidget'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  const clickUp = () => {
-    setCount(count + 1)
-  }
-
-  const clickDown = () => {
-    setCount(count<=0? 0 : count - 1)
-  }
-
-  return (
-    <>
-    <Navbar className={'navegacion'}/>
-    <h1>Contador: {count}</h1>
-    <Button onClick={clickUp}
-      children="+"
-    />
-    <Button onClick={clickDown}
-      children="-"
-    />
-    </>
-  )
+    return (
+        <>
+        <NavBar className={'navegacion'} title={'Lashee'}/>
+        <CartWidget/>
+        <ItemListContainer greeting={'¡Bienvenido a Lashee!'}/>
+        </>
+    )
 }
 
 export default App
